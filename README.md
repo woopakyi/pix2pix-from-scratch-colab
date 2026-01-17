@@ -49,10 +49,10 @@ This project demonstrates:
 
 ## Why This Project?
 
-It shows how the same architecture can be surprisingly reversible — turning a many-to-one problem (photo → label) into a solvable task with proper conditioning and skip connections. Great for learning conditional GANs, U-Net design, and adversarial training in practice.
+It shows how the same architecture can be reversible — turning a many-to-one problem (photo → label) into a solvable task with proper conditioning and skip connections. Great for learning conditional GANs, U-Net design, and adversarial training in practice.
 
 ## Credits
 
-Based on the original Pix2Pix paper by Isola et al. (2016) and inspired by the [official pytorch-CycleGAN-and-pix2pix repository](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+Based on the original Pix2Pix paper by Isola et al. (2016) and the [official pytorch-CycleGAN-and-pix2pix repository](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
 Dataset: [pix2pix Facades](https://www.kaggle.com/datasets/sabahesaraki/pix2pix-facades-dataset)
