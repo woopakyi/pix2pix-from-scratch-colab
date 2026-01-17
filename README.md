@@ -1,9 +1,9 @@
 # Pix2Pix from Scratch – Google Colab Implementation
 
-A clean, educational, from-scratch implementation of the famous **Pix2Pix** (Image-to-Image Translation with Conditional Adversarial Networks, 2016) entirely in Google Colab.
+A clean from-scratch implementation of the famous **Pix2Pix** (Image-to-Image Translation with Conditional Adversarial Networks, 2016) entirely in Google Colab.
 
 This project demonstrates:
-- Manual reconstruction of the core Pix2Pix architecture (no direct imports from official repo)
+- Reconstruction of the core Pix2Pix architecture
 - U-Net generator with skip connections + PatchGAN discriminator
 - Bidirectional training on the classic **facades** dataset:
   - **Forward**: semantic label maps → realistic building photos
@@ -18,8 +18,6 @@ This project demonstrates:
   - Learning rate monitoring
   - Periodic checkpoint saving
 - Visual exploration of U-Net skip connections and feature maps
-- Beautiful side-by-side comparisons: input → generated → ground truth
-- Surprisingly strong reverse-direction results (photo → precise label map)
 
 ## Results
 
@@ -31,7 +29,7 @@ This project demonstrates:
 ## How to Use
 
 1. Open the notebook in Google Colab  
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/pix2pix-from-scratch-colab/blob/main/lastHomework.ipynb)
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/woopakyi/pix2pix-from-scratch-colab/blob/main/notebook.ipynb)
 
 2. Select GPU runtime (T4 recommended)
 
@@ -40,10 +38,6 @@ This project demonstrates:
    → Dataset auto-downloads  
    → Forward model trains first  
    → Reverse direction training follows
-
-Outputs are saved to:
-- `debug_samples/` → forward direction (label → photo)
-- `reverse_samples/` → reverse direction (photo → label)
 
 ## Key Technologies
 
@@ -61,4 +55,4 @@ It shows how the same architecture can be surprisingly reversible — turning a 
 
 Based on the original Pix2Pix paper by Isola et al. (2016) and inspired by the [official pytorch-CycleGAN-and-pix2pix repository](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
-Dataset: [facades](http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/facades.tar.gz)
+Dataset: [pix2pix Facades](https://www.kaggle.com/datasets/sabahesaraki/pix2pix-facades-dataset)
